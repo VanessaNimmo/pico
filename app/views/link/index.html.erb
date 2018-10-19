@@ -1,0 +1,7 @@
+<h1>Pico</h1>
+<p>Enter the url you would like shortened: </p>
+
+<%= form_for Link.new, url: '/link' do |f| %>
+    <%= f.text_area :original_url %>
+    <%= f.submit "Get Short Url" %>
+  <% end %>
